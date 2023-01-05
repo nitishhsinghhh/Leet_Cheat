@@ -1,3 +1,6 @@
+// Time Complexity: O(n)
+// Space Complexity: O(n)
+
 public class Solution {
     public int[] TwoSum(int[] nums, int target) {
         Dictionary<int, int> dict = new Dictionary<int, int>();
