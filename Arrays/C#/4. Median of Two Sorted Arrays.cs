@@ -27,7 +27,7 @@ public class Solution {
             if (L1>R2) low=mid2 + 1;
             else if(L2>R1) high=mid2-1;
             else
-				return (Math.Max(L1,L2)+Math.Min(R1,R2))/2;
+		return (Math.Max(L1,L2)+Math.Min(R1,R2))/2;
       }
       return -1;
      }
