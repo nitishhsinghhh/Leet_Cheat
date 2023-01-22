@@ -192,6 +192,15 @@ int main() {
   Otherwise, this cut is the right one. 
   After we find the cut, the medium can be computed as (max(L1, L2) + min(R1, R2)) / 2;
   
+  Notes:
+  A. As C1 and C2 are mutually determined from each other, we can just move one and other can be found.
+  Howeverto get run-time complexity of O(log(min(N1,N2))) and more practical to move C2; or the one on 
+  the shorter array.
+  B. The only edge case which a cut falls is 0th (first) or the 2Nth(last). To solve this problem, we 
+  can imagine that both A1 and A2 actually have two extra elements, INT_MAX at A[-1] and INT_MAX at A[N]. 
+  These additions don't change the result, but make the implementation easier: If any L falls out of the left 
+  boundary of the array, then L = INT_MIN, and if any R falls out of the right boundary, then R = INT_MAX.
+  
   With inuts from Leetcode
   
 */
