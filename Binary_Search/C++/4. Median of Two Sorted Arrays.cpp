@@ -27,9 +27,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-
 using namespace std;
-
 class Solution {
 public:
 	double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
@@ -51,12 +49,11 @@ public:
 		return -1;
 	}
 };
-
 int main() {
-	vector<int> nums1{ 1, 2 };
-	vector<int> nums2{ 3, 4 };
-	Solution oSolution;
-	double value = oSolution.findMedianSortedArrays(nums1, nums2);
+    vector<int> nums1{ 1, 2 };
+    vector<int> nums2{ 3, 4 };
+    Solution oSolution;
+    double value = oSolution.findMedianSortedArrays(nums1, nums2);
     std::cout << "Success!\n";
 }
 
