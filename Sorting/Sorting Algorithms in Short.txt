@@ -1,3 +1,15 @@
+There are many sorting algorithms, each with their own strengths and weaknesses. Some of the most common sorting algorithms include:
+
+ 1. Bubble sort: repeatedly steps through the list to be sorted, compares each pair of adjacent items and swaps them if they are in the wrong order.
+ 2. Selection sort: repeatedly selects the next smallest (or largest) element from the unsorted portion of the list and moves it to its proper position in the sorted       portion of the list.
+ 3. Insertion sort: builds the final sorted list one item at a time by repeatedly removing one element from the input data, finding the location it belongs within the     sorted list, and inserting it there.
+ 4. Heap sort: builds a binary heap from the list, then repeatedly extracts the maximum element from the heap and places it at the end of the sorted list.
+ 5. Counting sort: A sorting technique based on keys between a specific range. It works by counting the number of objects having distinct key values (kind of hashing).     Then do some arithmetic to calculate the position of each object in the output sequence.
+ 6. Merge sort: divides the list in half, recursively sorts each half, and then merges the two sorted halves back together.
+ 7. Quick sort: selects a "pivot" element from the list and partition the other elements into two sub-lists, according to whether they are less than or greater than       the pivot. The sub-lists are then recursively sorted.
+
+The choice of sorting algorithm depends on the specific requirements of the application, such as the size of the list to be sorted and the amount of memory available.
+
 ============================================================================================
 1. Bubble Sort:
    Time Complexity : Best => O(n) , Worst & Average => O(n*n)
