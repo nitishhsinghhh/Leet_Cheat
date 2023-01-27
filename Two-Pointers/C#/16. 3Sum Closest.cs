@@ -20,16 +20,15 @@ namespace ThreeSumClosestApp {
             }
             return closest;
         }
-        static void Main(string[] args) {
+        static void Main(string[] args) {            
+            Solution oSolution = new Solution();
             int[] nums1 = { -1, 2, 1, -4 };
             int target1 = 1;
             int[] nums2 = { 0, 0, 0 };
-            int target2 = 1;
-            Solution oSolution = new Solution();
             int ThreeSumClosestVal1 = oSolution.ThreeSumClosest(nums1,target1);
             Console.WriteLine("First Result");
             Console.WriteLine(ThreeSumClosestVal1);
-            int ThreeSumClosestVal2 = oSolution.ThreeSumClosest(nums2, target2);
+            int ThreeSumClosestVal2 = oSolution.ThreeSumClosest(nums2, target1);
             Console.WriteLine("Second Result");
             Console.WriteLine(ThreeSumClosestVal2);
             Console.ReadKey();
