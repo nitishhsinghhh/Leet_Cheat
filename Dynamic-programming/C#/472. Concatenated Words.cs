@@ -2,9 +2,7 @@
 
 using System;
 using System.Collections.Generic;
-
-namespace ConsoleApp4
-{
+namespace ConcatenatedWordsApp {
     public class Solution {
         public IList<string> FindAllConcatenatedWordsInADict(string[] words) {
             List<string> res = new List<string>();
@@ -42,3 +40,9 @@ namespace ConsoleApp4
         }
     }
 }
+/*
+    It is obvious that a word can only be formed by words shorter than it. So we can first sort the input by length of each word, 
+    and only try to form one word by using words in front of it.
+
+
+*/
