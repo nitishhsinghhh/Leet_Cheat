@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace MostWaterApp {
+namespace ThreeSumApp {
     public class Solution {
         public IList<IList<int>> ThreeSum(int[] nums) {
             var reslist = new List<IList<int>>();
@@ -25,7 +25,7 @@ namespace MostWaterApp {
             }
             return reslist;
         }
-    static void Main(string[] args) {
+        static void Main(string[] args) {
             int[] nums1 = { -1, 0, 1, 2, -1, -4 };
             int[] nums2 = { 0, 1, 1 };
             int[] nums3 = { 0, 0,0 };
