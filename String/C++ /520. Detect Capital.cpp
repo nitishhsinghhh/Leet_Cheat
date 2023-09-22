@@ -12,7 +12,6 @@ public:
             if(word[1] >= 'A' && word[1] <= 'Z')
                 while(i < word.size() && word[i]>='A' && word[i] <= 'Z')
                     i++;
-
             else if(word[1] >= 'a' && word[1] <= 'z')
                 while(i < word.size() && word[i]>='a' && word[i] <= 'z')
                     i++;
