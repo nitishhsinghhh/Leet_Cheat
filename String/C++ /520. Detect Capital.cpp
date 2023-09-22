@@ -6,7 +6,7 @@ public:
         if(word.size() == 1) 
             return true;
         
-        int i=1;
+        int i = 1;
         if(word[0] >= 'A' && word[0] <= 'Z') {
             i = 2;
             if(word[1] >= 'A' && word[1] <= 'Z')
