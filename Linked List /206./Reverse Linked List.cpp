@@ -42,8 +42,8 @@ void main() {
 	Solution oSolution;
 
 	// Test Case 1
-	ListNode *head1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
-	ListNode *reverseList = oSolution.reverseList(head1);
+	ListNode *head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+	ListNode *reverseList = oSolution.reverseList(head);
 	cout << "The reversed list is: ";
 	while (reverseList != NULL) {
 		cout << reverseList->val << " ";
@@ -52,7 +52,7 @@ void main() {
 	cout << endl;
 
 	// Test Case 2
-	ListNode *head = new ListNode(1, new ListNode(2));
+	head = new ListNode(1, new ListNode(2));
 	reverseList = oSolution.reverseList(head);
 	cout << "The reversed list is: ";
 	while (reverseList != NULL) {
@@ -62,8 +62,8 @@ void main() {
 	cout << endl;
 
 	// Test Case 3
-	ListNode *head2 = nullptr;
-	reverseList = oSolution.reverseList(head2);
+	head = nullptr;
+	reverseList = oSolution.reverseList(head);
 	cout << "The reversed list is: ";
 	while (reverseList != NULL) {
 		cout << reverseList->val << " ";
@@ -72,3 +72,10 @@ void main() {
 	cout << endl;
 	system("pause");
 }
+
+/*
+Output:
+The reversed list is: 5 4 3 2 1
+The reversed list is: 2 1
+The reversed list is:
+*/
