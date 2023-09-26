@@ -20,8 +20,8 @@ struct ListNode {
 	int val;
 	ListNode *next;
 	ListNode() : val(0), next(nullptr) {}
-	ListNode(int x): val(x), next(nullptr) {}
-	ListNode(int x, ListNode *next) : val(0), next(next) {}
+	ListNode(int x) : val(x), next(nullptr) {}
+	ListNode(int x, ListNode *next) : val(x), next(next) {}
 };
 
 class Solution {
@@ -41,10 +41,9 @@ public:
 void main() {
 	Solution oSolution;
 
-	// Test Case 2
-	ListNode *head = new ListNode(1);
-	head->next = new ListNode(2);
-	ListNode *reverseList = oSolution.reverseList(head);
+	// Test Case 1
+	ListNode *head1 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+	ListNode *reverseList = oSolution.reverseList(head1);
 	cout << "The reversed list is: ";
 	while (reverseList != NULL) {
 		cout << reverseList->val << " ";
@@ -52,13 +51,9 @@ void main() {
 	}
 	cout << endl;
 
-	// Test Case 1
-	ListNode *head1 = new ListNode(1);
-	head1->next = new ListNode(2);
-	head1->next->next = new ListNode(3);
-	head1->next->next->next = new ListNode(4);
-	head1->next->next->next->next = new ListNode(5);
-	reverseList = oSolution.reverseList(head1);
+	// Test Case 2
+	ListNode *head = new ListNode(1, new ListNode(2));
+	reverseList = oSolution.reverseList(head);
 	cout << "The reversed list is: ";
 	while (reverseList != NULL) {
 		cout << reverseList->val << " ";
